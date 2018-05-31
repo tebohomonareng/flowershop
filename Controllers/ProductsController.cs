@@ -79,12 +79,12 @@ namespace NetApp_Final_.Controllers
             Random random = new Random();
             int counter = 0;
             int ProductID = random.Next(999);
-            var Name = HttpContext.Current.Request.Form["Name"];
+            string Name = HttpContext.Current.Request.Form["Name"];
             decimal Price = decimal.Parse(HttpContext.Current.Request.Form["Price"]);
             int Quantity = int.Parse(HttpContext.Current.Request.Form["Quantity"]);
             int Batch = int.Parse(HttpContext.Current.Request.Form["Batch"]);
             int StockThreshold = int.Parse(HttpContext.Current.Request.Form["StockThreshold"]);
-            var SupplierName = HttpContext.Current.Request.Form["Supplier"];
+            string SupplierName = HttpContext.Current.Request.Form["Supplier"];
 
             //collection files
             HttpFileCollection files = HttpContext.Current.Request.Files;
