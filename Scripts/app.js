@@ -98,7 +98,7 @@ app.controller('ProductTable', function ($scope, $http, $cookieStore, $cookies, 
     $http({
         method: "GET",
         url: "http://theflowershop.gearhostpreview.com/api/Products",
-        header: {'Content-Type: application/json'}
+        header: {"Content-Type": "application/json"}
     }).then(function mySuccess(response) {
         $scope.productsData = response.data;
 
